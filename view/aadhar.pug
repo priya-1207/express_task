@@ -1,0 +1,26 @@
+html 
+   head
+       title welcome 
+   body
+     p(style="color:blue") Hi All
+     h2(style="color:purple") enjoy learning 
+        table(border="2" cellpadding="10")
+          thead 
+            th FULLNAME 
+              button sort
+            th RATIONCARD_NO 
+              button sort
+            th EMAIL
+              button sort 
+            th PHONE NO
+              button sort
+            th CITY
+              button sort
+          each val in allaadhar
+            tr 
+             td #{val.fullname}
+             td #{val.rationcard_no}
+             td #{val.email}
+             td #{val.phone}
+             td #{val.city}
+             

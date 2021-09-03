@@ -1,0 +1,31 @@
+html 
+   head
+       title welcome to pug 
+   body
+     p(style="color:blue") let us learn about pug 
+     h2(style="color:purple") enjoy learning 
+        table(border="2" cellpadding="10")
+          thead 
+            th FULLNAME 
+              button sort
+            th PASSWORD
+              button sort 
+            th EMAIL
+              button sort 
+            th PHONE NO
+              button sort
+            th CITY
+              button sort
+            th PROFESSION
+              button sort
+            th INDUSTRY
+              button sort
+          each val in allstudents
+            tr 
+             td #{val.fullname}
+             td #{val.password}
+             td #{val.email}
+             td #{val.phone}
+             td #{val.city}
+             td #{val.profession}
+             td #{val.industry}
